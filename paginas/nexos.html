@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro</title>
+    <link rel="stylesheet" href="../css/nexos.css" />
+</head>
+<body>
+  <header>
+    <div class="header-contentido">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/MetroLogo.png" alt="Metro Exodus Logo" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../paginas/historia.html">HISTORIA</a></li>
+                <li><a href="../paginas/juegos.html" >JUEGOS</a></li>
+                <li><a href="../paginas/libros.html" >LIBROS</a></li>
+                <li><a href="../paginas/nexos.html" class="activo">NEXOS</a></li>
+            </ul>
+          </nav>
+          <div class="musica-logo">
+            <img src="../img/musicaLogo.png" alt="musica" id="musicaLogo"/>
+            <audio id="logoMusic" loop>
+                <source src="../img/themeMetro.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <a href="https://store.steampowered.com/bundle/13326/Metro_Saga_Bundle/" class="extra-boton">
+            <img src="../img/steamWish.png" alt="Steam" />
+        </a>     
+        <!-- ref js tpfinal p1  -->
+        <script>
+            document.getElementById('musicaLogo').addEventListener('click', function() {
+                let audio = document.getElementById('logoMusic');
+                audio.volume = 0.1; 
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        </script>
+</header>
+
+<div class="imagen-caja">
+    <img src="../img/nexos.png" type="png">
+</div>
+
+<div class="titulo-caja">
+    <h2>Desarrollo | FRANQUICIA</h2>
+</div>
+
+<div class="caja-text">
+    <input type="radio" name="slides" id="slide1" checked>
+    <input type="radio" name="slides" id="slide2">
+
+    <p class="overlay-h4" id="texto1">
+        4A Games es la empresa de videojuegos encargada de la franquicia de Metro. Se fundó en Kiev por trabajadores de GSC Game World en 2006, un año antes de la publicación de S.T.A.L.K.E.R.: Shadow of Chernobyl, destacando Olés Shiskovtsov y Oleksandr Maksimchuk, programadores del X-Ray Engine usado en la franquicia S.T.A.L.K.E.R.. Tras trabajar en el X-Ray Engine, utilizaron estas herramientas y conocimientos para crear el 4A Engine y se convirtieron en los directores (CTO) de 4A Games.
+    </p>
+    <p class="overlay-h4" id="texto2">
+        Tanto Stalker como Metro comparten un trasfondo postapocalíptico y un ambiente sombrío, reflejando las consecuencias de una guerra nuclear en Rusia. Ambas franquicias se inspiran en la literatura de ciencia ficción, incluyendo a autores rusos como los hermanos Strugatsky. La conexión se manifiesta en similitudes temáticas y estilísticas, destacando la atmósfera densa y la lucha por la supervivencia en entornos hostiles. Mientras STALKER explora la Zona de Exclusión de Chernobyl, Metro nos sumerge en los oscuros túneles del metro de Moscú, ofreciendo experiencias inmersivas en el género postapocalíptico.
+    </p>
+</div>
+
+<div class="slides">
+    <label for="slide1">
+        <img src="../img/flechaIzq.png" alt="flecha izquierda" class="arrow-left">
+    </label>
+    <label for="slide2">
+        <img src="../img/flechaDer.png" alt="flecha derecha" class="arrow-right">
+    </label>
+</div>
+</body>
+</html>

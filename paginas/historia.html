@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro</title>
+    <link rel="stylesheet" href="../css/historia.css" />
+</head>
+<body>
+  <header>
+    <div class="header-contentido">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/MetroLogo.png" alt="Metro Exodus Logo" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../paginas/historia.html" class="activo">HISTORIA</a></li>
+                <li><a href="../paginas/juegos.html">JUEGOS</a></li>
+                <li><a href="../paginas/libros.html">LIBROS</a></li>
+                <li><a href="../paginas/nexos.html">NEXOS</a></li>
+            </ul>
+          </nav>
+          <div class="musica-logo">
+            <img src="../img/musicaLogo.png" alt="musica" id="musicaLogo"/>
+            <audio id="logoMusic" loop>
+                <source src="../img/themeMetro.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <a href="https://store.steampowered.com/bundle/13326/Metro_Saga_Bundle/" class="extra-boton">
+            <img src="../img/steamWish.png" alt="Steam" />
+        </a>     
+        <!-- ref js tpfinal p1  -->
+        <script>
+            document.getElementById('musicaLogo').addEventListener('click', function() {
+                let audio = document.getElementById('logoMusic');
+                audio.volume = 0.1; 
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        </script>
+  </header>
+
+    <div class="video-caja">
+      <video autoplay loop muted playsinline>
+        <source src="../img/videos/meDos.mp4" type="video/mp4">
+        <source src="../img/videos/meDos.mp4" type="video/ogg">
+    </video>
+    <div class="overlay">
+      <h2 class="sombra">Universo | METRO</h2>
+      <input type="radio" name="slides" id="slide1" checked>
+      <input type="radio" name="slides" id="slide2" >
+  
+      <h4 class="overlay-h4" id="texto1">El universo de Metro se desarrolla en un mundo postapocalíptico devastado por una guerra nuclear. Ambientada principalmente en Moscú, la saga de videojuegos y la de los libros, narra la lucha de los supervivientes por mantenerse con vida en las profundidades del metro de la ciudad, que se ha convertido en su último refugio. Tras el cataclismo nuclear, la superficie de la Tierra quedó inhabitable, sumergida en un invierno nuclear donde la radiación, las criaturas mutantes y el colapso de la civilización humana son constantes amenazas. Los túneles del metro se convirtieron en el nuevo hogar de los supervivientes</h4>
+      <h4 class="overlay-h4" id="texto2">En este mundo subterráneo, la humanidad lucha no solo contra los peligros externos, sino también contra la desesperación, la escasez y el colapso de la moralidad. El protagonista, Artyom, es un joven que representa la esperanza en medio de este caos, mientras explora los oscuros túneles y se enfrenta a los horrores que acechan tanto en las profundidades como en la superficie destruida. El ambiente opresivo del metro, la lucha por la supervivencia y la constante sensación de peligro convierten a la saga Metro en un fascinante relato de resistencia humana en el fin del mundo.</h4>
+  
+      <div class="slides">
+          <label for="slide1">
+              <img src="../img/flechaIzq.png" alt="flecha izquierda" class="arrow-left">
+          </label>
+          <label for="slide2">
+              <img src="../img/flechaDer.png" alt="flecha derecha" class="arrow-right">
+          </label>    
+      </div>
+
+  </div>
+  
+          </a>
+      </div>
+  </div>
+  
+    <main>
+    </main>
+</body>
+</html>

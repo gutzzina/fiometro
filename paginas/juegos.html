@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro</title>
+    <link rel="stylesheet" href="../css/juegos.css" />
+</head>
+<body>
+  <header>
+    <div class="header-contentido">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/MetroLogo.png" alt="Metro Exodus Logo" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../paginas/historia.html">HISTORIA</a></li>
+                <li><a href="../paginas/juegos.html" class="activo">JUEGOS</a></li>
+                <li><a href="../paginas/libros.html" >LIBROS</a></li>
+                <li><a href="../paginas/nexos.html">NEXOS</a></li>
+            </ul>
+          </nav>
+          <div class="musica-logo">
+            <img src="../img/musicaLogo.png" alt="musica" id="musicaLogo"/>
+            <audio id="logoMusic" loop>
+                <source src="../img/themeMetro.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <a href="https://store.steampowered.com/bundle/13326/Metro_Saga_Bundle/" class="extra-boton">
+            <img src="../img/steamWish.png" alt="Steam" />
+        </a>     
+        <!-- ref js tpfinal p1  -->
+        <script>
+            document.getElementById('musicaLogo').addEventListener('click', function() {
+                let audio = document.getElementById('logoMusic');
+                audio.volume = 0.1; 
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        </script>
+  </header>
+
+    <div class="video-caja">
+      <video autoplay loop muted playsinline>
+        <source src="../img/videos/pruebaMe.mp4" type="video/mp4">
+        <source src="../img/videos/pruebaMe.mp4" type="video/ogg">
+    </video>
+    <main>
+        <div class="titulo-caja">
+            <h2>CRONOLOGÍA</h2>
+        </div>
+        <div class="imagen-caja">
+            <a href="https://store.steampowered.com/app/286690/Metro_2033_Redux/?l=spanish"><img src="../img/metroUno.png" alt="edicionUno" /></a>
+            <a href="https://store.steampowered.com/app/287390/Metro_Last_Light_Redux/"><img src="../img/metroDos.png" alt="edicionDos" /></a>
+            <a href="https://store.steampowered.com/app/412020/Metro_Exodus/"><img src="../img/metroTres.png" alt="edicionTres" /></a>
+        </div>
+    </main>
+</body>
+</html>
+
+

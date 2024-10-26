@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro</title>
+    <link rel="stylesheet" href="../css/libros.css" />
+</head>
+<body>
+  <header>
+    <div class="header-contentido">
+        <div class="logo">
+            <a href="../index.html"><img src="../img/MetroLogo.png" alt="Metro Exodus Logo" /></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="../paginas/historia.html">HISTORIA</a></li>
+                <li><a href="../paginas/juegos.html">JUEGOS</a></li>
+                <li><a href="../paginas/libros.html" class="activo">LIBROS</a></li>
+                <li><a href="../paginas/nexos.html">NEXOS</a></li>
+            </ul>
+          </nav>
+          <div class="musica-logo">
+            <img src="../img/musicaLogo.png" alt="musica" id="musicaLogo"/>
+            <audio id="logoMusic" loop>
+                <source src="../img/themeMetro.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <a href="https://store.steampowered.com/bundle/13326/Metro_Saga_Bundle/" class="extra-boton">
+            <img src="../img/steamWish.png" alt="Steam" />
+        </a>     
+        <!-- ref js tpfinal p1  -->
+        <script>
+            document.getElementById('musicaLogo').addEventListener('click', function() {
+                let audio = document.getElementById('logoMusic');
+                audio.volume = 0.1; 
+                if (audio.paused) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            });
+        </script>
+  </header>
+
+    <div class="imagen-caja">
+        <img src="../img/wallpaperPrueba.png" type="png">
+      </div>
+    <main>
+        <div class="overlay">
+            <h2 class="sombra"> DMITRY GLUKHOVSKY </h2>
+            <h4 class="sombra">La saga de libros de Metro fue creada por el autor ruso Dmitry Glukhovsky. Comenzando
+                con “Metro 2033” en 2007. A través de su narrativa cautivadora, Glukhovsky presenta una visión sombría
+                del futuro, donde la lucha por la supervivencia se entrelaza con cuestiones profundas sobre la
+                naturaleza humana y la moralidad en tiempos de crisis.</h4>
+        </div>
+    </main>
+    <main>
+        <div class="libros">
+            <a href="https://www.planetadelibros.com.ar/libro-metro-2033/374988"><img src="../img/libroUnoEdicion.png" alt="edicionUno" /></a>
+            <a href="https://tienda.planetadelibros.com.ar/products/metro-2034-ne?srsltid=AfmBOoqqMw4T0NSS-2MywDFIw3QCg-AWeQMw3i73b0xmTF2p4BJbpLjf"><img src="../img/libroDosEdicion.png" alt="edicionDos" /></a>
+            <a href="https://www.planetadelibros.com/libro-metro-2035-ne/347064"><img src="../img/libroTresEdicion.png" alt="edicionTres" /></a>
+        </div>
+    </main>
+</body>
+</html>
